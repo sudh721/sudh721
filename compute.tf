@@ -1,5 +1,6 @@
 resource "oci_core_instance" "first_terraform_instance" {
     # Required
+    availability_domain = "ap-mumbai-1"
     compartment_id = "ocid1.compartment.oc1..aaaaaaaagbozcglbeffbh5u3dcrjopxp3yjnfxfaxrfbdyal7qfsskpvspdq"
     shape = "VM.Standard.E2.1.Micro"
     source_details {
