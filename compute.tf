@@ -1,3 +1,11 @@
+provider "oci" {
+  tenancy_ocid = "ocid1.tenancy.oc1..aaaaaaaaxwleb3axlux7rt64piobv3bnwf3lp7llwr7z4o7yfsxdxm3mhsia"
+  user_ocid = "ocid1.user.oc1..aaaaaaaaac6jqhuwvvcnryuk2jcfmzyj3pd3zwwfcjgybvhwbkj2ge44zfiq" 
+  private_key_path = "/Users/ssinghpatel/Downloads/terraform_1.0.4_windows_amd64/.oci/myKey.pem"
+  fingerprint = "5b:30:33:5f:e3:14:2c:26:ba:7c:c4:d9:96:ab:e1:1f"
+  region = "ap-mumbai-1"
+}
+
 resource "oci_core_instance" "first_terraform_instance" {
     # Required
     availability_domain = "ap-mumbai-1"
